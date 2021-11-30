@@ -1,0 +1,17 @@
+--how many payment transcation greater than $5?
+SELECT count(*) FROM payment where amount >5
+
+-- how many actors have a first name that starts with the letter P? 
+SELECT COUNT(*) FROM actor where first_name like 'P%'
+
+-- how many unique districts are our customers from? 
+select count (distinct(district)) from address
+
+-- retrive the list of names for those distinct districts from previous question
+select distinct district from address
+
+-- how many films have a rating of r and a replacment cost between $5 and $15?
+select count(*) from film where rating = 'R' and replacement_cost between 5 and 15
+
+--how many films have the word Truman somewhere in the title? 
+select count(*) from film where title like '%Truman%'
